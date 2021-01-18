@@ -2,4 +2,42 @@
 	body{
 		background-color: cadetblue;
 	}
+	#main li{
+	width: 25%;
+	float: left;
+}
+	#aside li{
+	width: 100%;
+	
+}
+	#header{
+	
+}
+	#menu{
+	overflow: hidden;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+	#menu li{
+	width: 16.667%;
+	float: left;
+		
+}
+	#main{
+	height: 300px;
+	width: 70%;
+	float: left;
+	overflow: hidden;
+}
+	#aside{
+	height: 300px;
+	width: 30%;
+	float: left;
+	overflow: hidden;
+}
+	#footer{
+	height: 100px;
+	clear: both;
+}
 }

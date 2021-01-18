@@ -1,6 +1,24 @@
 @media screen and (min-width:481px){
 	body{
 		background-color: green;
-	}
+}
+	#main li{
+	width: 50%;
+	float: left;
+}
+
+	#header{
+		
+}
+	#main{
+	overflow: hidden;
+}
+	#aside{
+		overflow: hidden;
+
+}
+	#footer{
+	height: 100px;
+}
 }
 
