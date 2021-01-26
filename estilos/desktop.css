@@ -1,10 +1,10 @@
-@media screen and (min-width:769px){
+@media screen and (min-width: 769px){
 	body{
 		background-color: cadetblue;
 	}
 	#main li{
-	width: 25%;
-	float: left;
+		width: 25%;
+		float: left;
 }
 	#aside li{
 	width: 100%;
@@ -13,31 +13,77 @@
 	#header{
 	
 }
-	#menu{
-	overflow: hidden;
-	text-align: center;
-	width: 80%;
-	margin: 0 auto;
+	#header h1{
+		float: left;
 }
-	#menu li{
-	width: 16.667%;
-	float: left;
+	.sub{
+		
+	}
+	#menu{
+		overflow: hidden;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		height: 400px;
+		position:relative;
+
+	}
+	#sobre li{
+		width: 18%;
+		padding: 0;
+	}
+	#menu > li{
+		width: 16.667%;
+		float: left;
+	}
+	
+	#menu li .sub {
+		display: none;
+		width: 100%;
+		position: absolute;
+		top:40px;
+		left: 0;
+		background-color: brown;
+}
+	
+	#menu li .sub li{
+		display: block;
+		width: 50%;
+		float: none;
 		
 }
+	#menu li:hover > .sub {
+		display: flex;
+		
+	}
+
+	/***div, li{
+		padding: 10px;
+	}***/ 
+	a{
+		display: block;
+		text-decoration: none;
+	}
+	.check{
+		display: none;
+	}
+	#burger{
+		display: none;
+	}
 	#main{
-	height: 300px;
-	width: 70%;
-	float: left;
-	overflow: hidden;
+		width: 70%;
+		float: left;
+		overflow: hidden;
+		margin-top: 100px;
 }
 	#aside{
-	height: 300px;
-	width: 30%;
-	float: left;
-	overflow: hidden;
+		width: 30%;
+		float: left;
+		overflow: hidden;
+		margin-top: 100px;
 }
 	#footer{
-	height: 100px;
-	clear: both;
+		height: 100px;
+		clear: both;
 }
 }
