@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+	color: black;
+}
+ul{
+	list-style: none;
+}
+header {
+    height: 50px;
+    width: 100%;
+    background: #fff;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+}
+h1{
+	padding-left: 50px;
+	line-height: 50px;
+}
+#menu{
+		list-style: none outside none;
+	}
+	#menu > li{
+		float: left;
+		margin: 0;
+		padding: 0 22px;
+		line-height: 50px;
+		
+	}
+#menu a{
+	color: #7D7D7D;
+	
+}
+	#menu a:hover{
+	color: black;
+}
+	#menu li:hover .sub {
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 0;
+}
+	
+	.sub{
+		display: none;
+		background-color: white;
+		width: 100%;
+		padding: 50px;
+		overflow: hidden;
+		position: relative;
+}
+.sub h6{
+		font-size: 1rem;
+		font-weight: 300;
+}
+.sub a{
+	font-size: 2rem;
+	font-weight: 300;
+}
+.subsub{
+	display: none;
+	padding-left: 30px;
+	border-left: solid 2px #ddd;
+}
+.subsub a{
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+#menu li:hover > .subsub {
+		display: block;
+		position: absolute;
+		left: 20%;
+		top: 50px;	
+	}	
+	
+.subsub2{
+	display: none;
+	border-left: solid 2px #ddd;
+	padding-left: 30px;
+}
+.subsub2 a{
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+#menu li:hover > .subsub2 {
+		display: block;
+		position: absolute;
+		left: 35%;
+		top: 50px;	
+	}
+.imagen{
+	position: absolute;
+	right: 0;
+	top:0;
+
+}
+.dere i,p,#burguer{
+	padding-right: 22px;
+}
+.dere p{
+	line-height: 50px;
+	float:left;
+	text-align: center;
+}
+.dere i{
+	line-height: 50px;
+	
+}
+#burguer{
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	padding-top: 15px;
+	float:right;
+}
+#burguer li{
+	background-color: black;
+	width: 20px;
+	height: 2px;
+	margin: 4px auto;
+	padding: 0;
+  	list-style-type: none;
+}
+.check{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top:0;
+	right: 0;
+	z-index: 2;
+	opacity: 0;
+}
+.check:checked ~ #menu2{
+	right: 0;
+	transition: 2s;
+}
+.check:not(:checked)~ #menu2{
+	right: -900px;
+	transition: 1.6s;
+}
+#menu2{
+	background-color: white;
+	width: 30%;
+	height: 400px;
+	position:absolute;
+	top:50px;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+	background-image: url("../img/orcaero/ORCA_AREO_M21eTEAM.jpg");
+	height: 100vh;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70px;
+}
+.sectioniz{
+	padding-left: 50px;
+}
+.sectioniz h3{
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+.sectioniz h2{
+	font-size: 2.2rem;
+	padding-bottom: 15px;
+}
+.sectioniz h4{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.sectioniz i{
+	font-size: 1.2rem;
+	padding-right: 20px;
+}
+.sectionder{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 100px;
+	width: 5%;
+    min-width: 80px;
+    margin: 30px;
+}
+#bola1{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #00068F;
+}
+#bola2{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #008C21;
+}
+#bola3{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #C70003;
+}
+.pastillas{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+.pastillas h3{
+	font-size: 1,5rem;
+    font-weight: 300;
+	border:solid 1px #ddddd;
+	padding-right: 15px;
+    padding-left: 15px;
+	background-color: white;
+}
+.pastillas h4{
+	font-size: 1.5rem;
+    font-weight: 300;
+	padding-right: 50px;
+    padding-left: 50px;
+	color:white;
+	background-color: #05048A;
+	border-top: solid 1px #05048A;
+}
+.pastillas h5{
+	font-size: 1.5rem;
+    font-weight: 300;
+	background-color: black;
+	color: white;
+	padding-right: 20px;
+    padding-left: 20px;
+	border-top: solid 1px black;
+}

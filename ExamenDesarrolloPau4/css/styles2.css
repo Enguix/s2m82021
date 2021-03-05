@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+	color: black;
+}
+ul{
+	list-style: none;
+}
+header {
+    height: 50px;
+    width: 100%;
+    background: #fff;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 2;
+	border-bottom: solid 1px #ddd;
+}
+h1{
+	padding-left: 50px;
+	line-height: 50px;
+}
+#menu{
+		list-style: none outside none;
+	}
+	#menu > li{
+		float: left;
+		margin: 0;
+		padding: 0 22px;
+		line-height: 50px;
+		
+	}
+#menu a{
+	color: #7D7D7D;
+	
+}
+	#menu a:hover{
+	color: black;
+}
+	#menu li:hover .sub {
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 0;
+}
+	
+	.sub{
+		display: none;
+		background-color: white;
+		width: 100%;
+		padding: 50px;
+		overflow: hidden;
+		position: relative;
+}
+.sub h6{
+		font-size: 1rem;
+		font-weight: 300;
+}
+.sub a{
+	font-size: 2rem;
+	font-weight: 300;
+}
+.subsub{
+	display: none;
+	padding-left: 30px;
+	border-left: solid 2px #ddd;
+}
+.subsub a{
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+#menu li:hover > .subsub {
+		display: block;
+		position: absolute;
+		left: 20%;
+		top: 50px;	
+	}	
+	
+.subsub2{
+	display: none;
+	border-left: solid 2px #ddd;
+	padding-left: 30px;
+}
+.subsub2 a{
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+#menu li:hover > .subsub2 {
+		display: block;
+		position: absolute;
+		left: 35%;
+		top: 50px;	
+	}
+.imagen{
+	position: absolute;
+	right: 0;
+	top:0;
+
+}
+.dere i,p,#burguer{
+	padding-right: 22px;
+}
+.dere p{
+	line-height: 50px;
+	float:left;
+	text-align: center;
+}
+.dere i{
+	line-height: 50px;
+	
+}
+#burguer{
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	padding-top: 15px;
+	float:right;
+}
+#burguer li{
+	background-color: black;
+	width: 20px;
+	height: 2px;
+	margin: 4px auto;
+	padding: 0;
+  	list-style-type: none;
+}
+.check{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top:0;
+	right: 0;
+	z-index: 2;
+	opacity: 0;
+}
+.check:checked ~ #menu2{
+	right: 0;
+	transition: 2s;
+}
+.check:not(:checked)~ #menu2{
+	right: -900px;
+	transition: 1.6s;
+}
+#menu2{
+	background-color: white;
+	width: 30%;
+	height: 400px;
+	position:absolute;
+	top:50px;
+}
+.titulo h2{
+	padding-top: 7vh;
+	padding-bottom: 40px;
+	font-size: 2.5rem;
+	text-align: center;
+}
+.contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.producto {
+    border-right: solid 1px #848484;
+    border-top: solid 1px #848484;
+	padding: 20px;
+}
+.producto li {
+    list-style: none;
+}
+.producto img {
+    width: 90%;
+	float:left;
+	padding-left: 40px;
+}
+.bolas{
+	float: right;
+}
+.bola1{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	background-color: #FA0004;
+}
+.bola1{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	background-color: #FA0004;
+}
+.bola2{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	background-color: #FFEC0D;
+}
+.bola3{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	background-color: #7700FF;
+}
+.bola4{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	background-color: #0026FA;
+}
+.subtitulo{
+	clear: both;
+}
+.subtitulo h3{
+	text-align: center;
+	font-size: 2rem;
+}
+.subtitulo h4{
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.cuadrados{
+	clear: both;
+	display: flex;
+	justify-content: space-evenly;
+}
+.cuadrados .cuadrado1, .cuadrado2{
+	padding: 10px 20px;
+	border: solid 1px black;
+	display: none;
+}
+.producto:hover{
+	background-color: #ddd;
+	position: relative;	
+}
+.producto:hover .subtitulo{
+	position: absolute;
+	top: 10px;
+	left:35%;
+}
+.producto:hover .cuadrado1, .producto:hover .cuadrado2{
+	display: block;
+}
