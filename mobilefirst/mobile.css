@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Oswald', sans-serif;
+}
+li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color:#666666;
+}
+a:link{}
+a:visited{}
+a:active{}
+a:hover{color:black}
+@media screen and (max-width: 768px){
+body{
+	height: 100vh;
+	width: 100vw;
+	font-size: 19px;
+	line-height: 30px;
+	overflow-x: none;
+}
+.imagen{
+		display:none
+	}
+#header{
+	height: 75vh;
+	background-color: violet;
+	position: relative;
+}
+#logo{
+	background-color: red;
+	height: 6vh;
+	width: 30%;
+	float: left;
+	padding: 10px;
+	padding-left: 20px;
+	font-style: italic;
+	font-size: 1.5em;
+	
+}
+#menu{	
+	height: 65vh;
+	width: 100vw;
+	float: left;
+	position: absolute;
+	top: 6vh;
+	right: -100vw;
+	transition: 1s;
+}
+#menu1, #menu2{
+}
+#menu1 li, #menu2 li{
+	border-bottom: solid 1px #fff;
+	background-color: #ddd;
+	padding: 10px;
+	padding-left: 20px;
+}
+#menu2 i{
+	display: none;
+}
+.sub{
+	display: none;
+}
+.subsub{
+	display: none;
+}
+#iconos{
+	background-color: blue;
+	height: 6vh;
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+}
+#iconos i{
+	font-size: 1.2em;
+	padding: 15px;
+	line-height: 2em;
+}
+
+#main{
+	height: 85vh;
+	background-color: lightblue;
+}
+#content{
+	height: 75vh;
+		overflow-y: auto;
+}
+.press{
+	width: 90vw;
+	height: 300px;
+	background-color: yellow;
+	margin: 0 auto;
+	border: solid 10px #FFF;
+}
+#footer{
+	height: 10vh;
+	background-color: lightgreen;
+}
+}
