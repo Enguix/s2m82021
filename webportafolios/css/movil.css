@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color:#000000;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+}
+@media screen and (max-width: 768px){
+/*HEADER*/
+	header{
+		height: 10vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #2F4C73;
+	}
+	
+/*MENU1*/
+	.menu1{
+		width: 40%;
+		padding-left: 2vh;
+	}
+	.menu1 h1{
+		color: #8FBDD9;
+		font-size: 1.8em;
+	}
+/*MENU2*/
+	div#imgmenu {
+   		display: none;
+	}
+	#menuprincipal{
+		position: absolute;
+		margin-top: 5vh;
+		left: 0;
+		width: 100%;
+		background-color: #2F4C73;
+		display: none;
+	}
+	#menuprincipal > li{
+		border-top: 1px solid #FFF;
+	}
+	#menuprincipal > li, #menuprincipal > a li{
+		border-bottom: 1px solid #FFF;
+		font-size: 1.2em;
+		padding: 4vh 0 3vh 4vh;
+		color: #FFFFFF;
+		font-weight: 500;
+	}
+	.sub{
+		display: none;
+	}
+	.sub > a {
+		font-size: 0.9em;
+		color: #FFFFFF;
+		padding: 4vh 0 4vh 8vh;
+		font-weight: 100;
+	}
+/*MENU3*/
+	.menu3{
+		width: 60%;
+		padding-left: 10px;
+	}
+	.menu3 i{
+		font-size: 1.4em;
+		padding-left: 30px;
+		color: #FFFFFF;
+	}
+	#personalizar{
+		background-color: #2F4C73;
+		position: absolute;
+		top: 10vh;
+		right: 0;
+		width: 35%;
+		z-index: 5;
+		padding-top: 1vh;
+		display: none;
+	}
+	input[type=range]{
+		width: 30px;
+	}
+	.pers1{
+		display: flex;
+		justify-content: space-evenly;
+		padding-bottom: 2em;
+	}
+	.pers1 i{
+		color: #63636D;
+		padding-left: 0;
+	}
+/*FOOTER*/
+	footer{
+		height: 60vh;
+		width: 100%;
+		border-top: solid 5px #2F4C73; 
+	}
+/*CONTAINER*/
+	.container3{
+		display: grid;
+		width: 80%;
+		margin: 0 auto;
+		height: 20vh;
+		grid-gap: 5%;
+	}
+	.capsula h6{
+		font-size: 1.3em;
+		padding-top: 3vh;
+		padding-bottom: 10px;
+		font-weight: 600;
+		width: 100%;
+		color: #2F4C73;
+		padding-left: 3vw;
+	}
+	.listfooter{
+		border-top: 3px solid #2F4C73;
+		padding-bottom: 2vh;
+		padding-top: 1vh;
+	}
+	.listfooter li{
+		padding-top: 1vh;
+		font-weight: 400;
+		color: #2F4C73;
+		font-size: 1em;
+	}
+	.listfooter i{
+		padding-right: 3vw;
+		padding-left: 3vw;
+		color: #8AA7CF;
+	}
+	.email{
+		padding-top: 3vh;
+		text-align: center;
+		color: #2F4C73;
+		border: 2px solid #2F4C73;
+		padding-bottom: 2vh;
+	}
+	#emailAddress{
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+		width: 80%;
+		height: 5vh;
+		border-bottom: 2px solid #2F4C73;
+		outline: none;
+		font-size: 1.5em;
+		color: #2F4C73;
+	}
+	.email i{
+		font-size: 2em;
+	}
+}

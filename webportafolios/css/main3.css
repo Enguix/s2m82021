@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px){
+/*MAIN*/
+	main{
+		height: 100vh;
+	}
+/*IMGGRANDRE*/
+	.imggrande img{
+		width: 48%;
+		height: 90vh;
+		float: left;
+		padding: 7px 20px 7px 20px
+		
+	}
+	.container4{
+		display: grid;
+		grid-template-columns: repeat(3,33%);
+		grid-gap: 8px;
+		padding-top: 7px;
+		float: left;
+		width: 50%;
+	}
+	.container4 img{
+		width: 100%;
+	}
+}	
+

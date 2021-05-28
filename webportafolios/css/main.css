@@ -1,0 +1,127 @@
+@media screen and (min-width: 768px){
+/*MAIN*/
+	main{
+		height: 260vh;
+	}
+/*SLIDER*/	
+	.slider{
+		background-image: ;
+		background-size: cover;
+		height: 90vh;
+	}
+	.translucido{
+		background-color: rgba(0,0,0,0.51);
+		height: 90vh;
+		width: 100%;
+		
+	}
+	.izq{
+		height: 90vh;
+		width: 50%;
+		float: left;
+		color: #8FBDD9;
+		display: flex;
+		align-items: center;
+	}
+	.der{
+		height: 90vh;
+		width: 50%; 
+		float: left;
+		color: #8FBDD9;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.izq i{
+		font-size: 5em;
+		padding-left: 5vw;
+	}
+	.der i{
+		font-size: 5em;
+		padding-right: 5vw;
+	}
+	.der:hover , .izq:hover{
+		color: #D5E7F2;
+	}
+/*CONTAINER1*/	
+	.container1{
+		height: 100vh;
+		width: 100%;
+		background-color: #2F4C73;
+	}
+	#letracontainer{
+		width: 50%;
+		height: 100vh;
+		float: left;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.7em;
+		color: #8FBDD9;
+		border: solid 30px #FFFFFF;
+		cursor: default;
+		flex-direction: column;
+	}
+	#letracontainer i{
+		padding-top: 10vh;
+		color: #D5E7F2;
+		font-size: 2em;
+	}
+	#letracontainer:hover i{
+		font-size: 4em;
+	}
+	#imgcontainer{
+		background-image: url("../imgenes/graff12.jpg");
+		background-size: cover;
+		width: 50%;
+		height: 50vh;
+		background-position: 50vw;
+		float:left;
+		border-top: solid 30px #FFFFFF;
+		border-right: solid 30px #FFFFFF;
+		border-bottom: solid 30px #FFFFFF;
+	}
+	#imgcontainer1{
+		background-image: url("../imgenes/graff3.jpg");
+		background-size: cover;
+		width: 50%;
+		height: 50vh;
+		left: 50vw;
+		background-position: 48vw;
+		float:left;
+		border-right: solid 30px #FFFFFF;
+		border-bottom: solid 30px #FFFFFF;
+	}
+/*CONTAINER2*/	
+	.container2{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		width: 80%;
+		margin: 0 auto;
+		grid-gap: 5%;
+		height: 50vh;
+		padding-top: 10vh;
+	}
+	.pastilla{
+		background-color: #2F4C73;
+		height: 40vh;
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+		justify-content: center;
+		color: #8FBDD9;
+	}
+	.pastilla i{
+		font-size: 3em;
+		padding-bottom: 20px;
+	}
+	.pastilla h6{
+		font-size: 2em;
+		font-weight: 500;
+		cursor: default;
+	}
+	.pastilla:hover{
+		background-color: #8FBDD9;
+		color: #2F4C73;	
+	}
+}

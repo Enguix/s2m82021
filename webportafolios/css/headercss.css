@@ -1,0 +1,110 @@
+@media screen and (min-width: 768px){
+/*HEADER*/
+	header{
+		height: 10vh;
+		background-color: #2F4C73;
+	}
+/*Menu1*/
+	.menu1{
+		height: 10vh;
+		font-style: italic;
+		display: flex;
+		align-items: center;
+		width: 15%;
+		float: left;
+		padding-left: 3vw;
+	}
+	.menu1 h1{
+		color: #8FBDD9;
+	}
+/*Menu2*/
+	.menu2{
+		width: 70%;
+		height: 10vh;
+		float: left;
+	}
+	#menuprincipal{
+		display: flex;
+		justify-content: center;
+		padding-top: 4vh;	
+	}
+	#menuprincipal li{
+		color: #FFF;
+		font-size: 1em;
+		padding-right: 40px;
+	}
+	#menuprincipal li:hover{
+		color: #8FBDD9;
+	}
+		
+	.sub{
+		display: none;
+		background-color: #2F4C73;
+		width: 100%;
+		padding: 70px;
+		overflow: hidden;
+		float: left;
+		font-size: 1.3em; 
+	}
+	.sub li{
+		width: 30%;
+		border-right: solid 2px #ffffff;
+		font-size: 25px;
+		line-height: 4;
+	}
+	#imgmenu {
+    	width: 50%;
+    	height: 67vh;
+   		position: absolute;
+    	top: 2vw;
+    	left: 50vw;
+	}
+	#imgmenu img {
+    	width: 100%;
+	}
+	#menuprincipal li:hover .sub {
+		display: block;
+		position: absolute;
+		left: 0;
+	}
+/*Menu3*/
+	.menu3{
+		height: 10vh;
+		float: left;
+		padding-top: 3.5vh;
+		width: 15%;
+	}
+	#burguer{
+		display: none;
+	}
+	.menu3 i{
+		color: #FFFFFF;
+		font-size: 1.2em;
+		padding-left: 3vw;
+	}
+	.menu3 i:hover{
+		color: #8FBDD9;
+	}
+	#personalizar{
+		background-color: #2F4C73;
+		position: absolute;
+		top: 10vh;
+		right: 0;
+		width: 15%;
+		z-index: 5;
+		padding-top: 1vh;
+		display: none;
+	}
+	input[type=range]{
+		width: 30px;
+	}
+	.pers1{
+		display: flex;
+		justify-content: space-evenly;
+		padding-bottom: 2em;
+	}
+	.pers1 i{
+		color: #8FBDD9;
+		padding-left: 0;
+	}
+}
