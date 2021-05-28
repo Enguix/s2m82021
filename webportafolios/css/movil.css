@@ -77,9 +77,10 @@ body{
 		padding-left: 10px;
 	}
 	.menu3 i{
-		font-size: 1.4em;
-		padding-left: 30px;
+		font-size: 1.5em;
+		padding-left: 25px;
 		color: #FFFFFF;
+		height: 10vh
 	}
 	#personalizar{
 		background-color: #2F4C73;
